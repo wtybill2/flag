@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.MenuMapper">
+
+	<resultMap id="BasesResultMap"
+		type="com.example.model.AuthModel">
+		<id column="id" property="id" />
+		<result column="menu_code" property="menu_code" />
+		<result column="menu_name" property="menu_name" />
+		<result column="role_code" property="role_code" />
+
+		<collection property="list"
+			ofType="com.example.model.MenuModel">
+			<result column="code" property="menu_code" />
+			<result column="url" property="menu_url" />
+			<result column="name" property="menu_name" />
+			<result column="parent_code" property="parent_code" />
+			<result column="level" property="level" />
+		</collection>
+	</resultMap>
+	
+	<update id="update" parameterType="Object">
+        update customer.authority set
+        type = 0
+        where menu_code = #{menu_code} and role_code=#{role_code}
+    </update>
+    <update id="updateAll" parameterType="Object">
+        update customer.authority set
+        type = 1
+        where role_code=#{role_code}
+    </update>
+
+	<select id="selectDao" resultMap="BasesResultMap"
+		parameterType="Object">
+		select
+		a.id,a.menu_code,a.menu_name,a.role_code,b.menu_code code,b.menu_url url,b.menu_name name,b.parent_code parent_code,b.level level
+		from customer.authority a left join customer.menu b on
+		a.menu_code=b.parent_code where a.role_code = #{role_code} and type=0
+	</select>
+</mapper>

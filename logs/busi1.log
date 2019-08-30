@@ -1,0 +1,82 @@
+[2019-01-14 09:03:03] org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)Thread-38 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-14 09:03:03] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)Thread-38 Shutting down ExecutorService 'taskScheduler'
+[2019-01-14 09:03:03] org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:844)Thread-38 Shutting down Quartz Scheduler
+[2019-01-14 09:03:03] org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)Thread-38 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-01-14 09:03:03] org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)Thread-38 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-14 09:03:03] org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)Thread-38 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-01-14 09:03:03] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)Thread-38 Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-01-14 09:03:03] com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350)Thread-38 HikariPool-6 - Shutdown initiated...
+[2019-01-14 09:03:03] com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352)Thread-38 HikariPool-6 - Shutdown completed.
+[2019-01-14 09:03:03] org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:227)restartedMain Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2019-01-14 09:03:03] org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:227)restartedMain For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2019-01-14 09:03:03] org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50)restartedMain Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+[2019-01-14 09:03:03] org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675)restartedMain No active profile set, falling back to default profiles: default
+[2019-01-14 09:03:04] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90)restartedMain Tomcat initialized with port(s): 8080 (http)
+[2019-01-14 09:03:04] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296)restartedMain Root WebApplicationContext: initialization completed in 684 ms
+[2019-01-14 09:03:04] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)restartedMain Initializing ExecutorService 'applicationTaskExecutor'
+[2019-01-14 09:03:04] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:61)restartedMain Adding welcome page template: index
+[2019-01-14 09:03:04] com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110)restartedMain HikariPool-7 - Starting...
+[2019-01-14 09:03:04] com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123)restartedMain HikariPool-7 - Start completed.
+[2019-01-14 09:03:04] org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)restartedMain Using default implementation for ThreadExecutor
+[2019-01-14 09:03:04] org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)restartedMain Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-01-14 09:03:04] org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)restartedMain Quartz Scheduler v.2.3.0 created.
+[2019-01-14 09:03:04] org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:155)restartedMain RAMJobStore initialized.
+[2019-01-14 09:03:04] org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)restartedMain Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-01-14 09:03:04] org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)restartedMain Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2019-01-14 09:03:04] org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)restartedMain Quartz scheduler version: 2.3.0
+[2019-01-14 09:03:04] org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)restartedMain JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5b98e5f7
+[2019-01-14 09:03:04] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)restartedMain Initializing ExecutorService 'taskScheduler'
+[2019-01-14 09:03:05] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)restartedMain LiveReload server is running on port 35729
+[2019-01-14 09:03:05] org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:726)restartedMain Starting Quartz Scheduler now
+[2019-01-14 09:03:05] org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)restartedMain Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2019-01-14 09:03:05] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)restartedMain Tomcat started on port(s): 8080 (http) with context path '/dall'
+[2019-01-14 09:03:05] org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)restartedMain Started DallApplication in 1.744 seconds (JVM running for 655.775)
+[2019-01-14 09:03:05] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent(ConditionEvaluationDeltaLoggingListener.java:56)restartedMain Condition evaluation unchanged
+[2019-01-14 09:03:24] org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)Thread-44 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-14 09:03:24] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)Thread-44 Shutting down ExecutorService 'taskScheduler'
+[2019-01-14 09:03:24] org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:844)Thread-44 Shutting down Quartz Scheduler
+[2019-01-14 09:03:24] org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:666)Thread-44 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-01-14 09:03:24] org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:585)Thread-44 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-14 09:03:24] org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:740)Thread-44 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-01-14 09:03:24] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)Thread-44 Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-01-14 09:03:24] com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:350)Thread-44 HikariPool-7 - Shutdown initiated...
+[2019-01-14 09:03:24] com.zaxxer.hikari.HikariDataSource.close(HikariDataSource.java:352)Thread-44 HikariPool-7 - Shutdown completed.
+[2019-01-14 09:03:25] org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:227)restartedMain Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2019-01-14 09:03:25] org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:227)restartedMain For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2019-01-14 09:03:25] org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50)restartedMain Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+[2019-01-14 09:03:25] org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:675)restartedMain No active profile set, falling back to default profiles: default
+[2019-01-14 09:03:25] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90)restartedMain Tomcat initialized with port(s): 8080 (http)
+[2019-01-14 09:03:25] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:296)restartedMain Root WebApplicationContext: initialization completed in 623 ms
+[2019-01-14 09:03:25] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)restartedMain Initializing ExecutorService 'applicationTaskExecutor'
+[2019-01-14 09:03:25] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:61)restartedMain Adding welcome page template: index
+[2019-01-14 09:03:25] com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110)restartedMain HikariPool-8 - Starting...
+[2019-01-14 09:03:25] com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123)restartedMain HikariPool-8 - Start completed.
+[2019-01-14 09:03:25] org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1208)restartedMain Using default implementation for ThreadExecutor
+[2019-01-14 09:03:25] org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)restartedMain Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-01-14 09:03:25] org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:229)restartedMain Quartz Scheduler v.2.3.0 created.
+[2019-01-14 09:03:25] org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:155)restartedMain RAMJobStore initialized.
+[2019-01-14 09:03:25] org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:294)restartedMain Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-01-14 09:03:25] org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1362)restartedMain Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2019-01-14 09:03:25] org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1366)restartedMain Quartz scheduler version: 2.3.0
+[2019-01-14 09:03:25] org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2287)restartedMain JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@51a8fbc
+[2019-01-14 09:03:25] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)restartedMain Initializing ExecutorService 'taskScheduler'
+[2019-01-14 09:03:26] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)restartedMain LiveReload server is running on port 35729
+[2019-01-14 09:03:26] org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:726)restartedMain Starting Quartz Scheduler now
+[2019-01-14 09:03:26] org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:547)restartedMain Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2019-01-14 09:03:26] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)restartedMain Tomcat started on port(s): 8080 (http) with context path '/dall'
+[2019-01-14 09:03:26] org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)restartedMain Started DallApplication in 0.994 seconds (JVM running for 676.407)
+[2019-01-14 09:03:26] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent(ConditionEvaluationDeltaLoggingListener.java:56)restartedMain Condition evaluation unchanged

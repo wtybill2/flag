@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.UserMapper">
+
+	<!-- Result Map 映射关系 -->
+	<resultMap id="BaseResultMap"
+		type="com.example.model.UserModel">
+		<id column="id" property="id" />
+		<result column="user_name" property="user_name" />
+		<result column="user_pass" property="user_pass" />
+		<result column="user_code" property="user_code" />
+		<result column="role_code" property="role_code" />
+
+		<result column="role_name" property="role_name" />
+		<result column="parent_code" property="parent_code" />
+
+	</resultMap>
+
+	<!-- table all fields sql片段 -->
+	<sql id="Base_Column_List">
+		id, user_name, user_pass, user_code,role_code,parent_code
+	</sql>
+
+	<!-- 查询条件 -->
+	<sql id="Example_Where_Clause">
+		where 1=1
+		<if test="id != null">
+			and id = #{id}
+		</if>
+		<if test="user_code != null and user_code != ''">
+			and user_code like #{user_code}
+		</if>
+		<if test="user_name != null and user_name != ''">
+			and user_name like #{user_name}
+		</if>
+		<if test="role_code != null and role_code != ''">
+			and role_code = #{role_code}
+		</if>
+	</sql>
+
+	<!-- 插入记录 -->
+	<!--selectKey 会将 SELECT LAST_INSERT_ID()的结果放入到传入的model的主键里面， keyProperty 
+		对应的model中的主键的属性名，这里是 user 中的id，因为它跟数据库的主键对应 order AFTER 表示 SELECT LAST_INSERT_ID() 
+		在insert执行之后执行,多用与自增主键， BEFORE 表示 SELECT LAST_INSERT_ID() 在insert执行之前执行，这样的话就拿不到主键了， 
+		这种适合那种主键不是自增的类型 resultType 主键类型 -->
+	<insert id="insert" parameterType="Object">
+		<selectKey resultType="java.lang.Integer" order="AFTER"
+			keyProperty="id">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+		insert into customer.user(user_name, user_pass,
+		user_code,role_code,parent_code)
+		values(#{user_name}, #{user_pass}, #{user_code},#{role_code},#{parent_code})
+	</insert>
+
+	<!-- 删除记录 -->
+	<delete id="delete" parameterType="Object">
+		delete from customer.user where id = #{id}
+	</delete>
+
+	<!-- 根据，修改记录 -->
+	<update id="update" parameterType="Object">
+		update customer.user set
+		user_name = #{user_name}, user_code = #{user_code},user_code=#{role}
+		where user_code = #{user_code}
+	</update>
+
+	<!-- 修改记录，只修改只不为空的字段 -->
+	<update id="updateActive" parameterType="Object">
+		update customer.user set
+		<trim suffixOverrides=",">
+			<if test="user_name != null and user_name != '' ">
+				user_name = #{user_name},
+			</if>
+			<if test="user_code != null and user_code != '' ">
+				user_code = #{user_code},
+			</if>
+			<if test="user_pass != null and user_pass != '' ">
+				user_pass = #{user_pass},
+			</if>
+			<if test="parent_code != null and parent_code != '' ">
+				parent_code = #{parent_code},
+			</if>
+			<if test="role_code != null and role_code != '' ">
+				role_code = #{role_code},
+			</if>
+
+		</trim>
+		where id = #{id}
+	</update>
+
+	<!-- 根据查询 系统用户 -->
+	<select id="select" resultMap="BaseResultMap"
+		parameterType="Object">
+		select
+		<include refid="Base_Column_List" />
+		from customer.user where user_code = #{user_code}
+	</select>
+<!--     <select id="selecter" resultMap="BaseResultMap" -->
+<!--         parameterType="Object"> -->
+<!--         select -->
+<!--         * -->
+<!--         from customer.user where user_code = #{user_code} -->
+<!--     </select> -->
+
+
+	<!-- 根据查询 系统用户 -->
+	<select id="selectrole" resultMap="BaseResultMap"
+		parameterType="Object">
+		select *
+		from customer.role where role_code = #{role_code}
+	</select>
+	
+
+	<!-- 系统用户 列表总数 -->
+	<select id="selectCount" resultType="java.lang.Integer"
+		parameterType="Object">
+		select count(1) from customer.user
+		<include refid="Example_Where_Clause" />
+	</select>
+	
+
+	<!-- 查询系统用户列表不开启分页 -->
+	<select id="selectdel" resultMap="BaseResultMap"
+		parameterType="Object">
+		select
+		<include refid="Base_Column_List" />
+		from customer.user
+		<include refid="Example_Where_Clause" />
+	</select>
+
+	<select id="selectModel" resultMap="BaseResultMap"
+		parameterType="Object">
+		select
+		<include refid="Base_Column_List" />
+		from customer.user
+		<include refid="Example_Where_Clause" />
+		limit ${rowStart},${pageLimit}
+		<!-- <if test="pager.orderCondition != null and pager.orderCondition != 
+			''"> -->
+		<!-- ${pager.orderCondition} -->
+		<!-- </if> -->
+		<!-- <if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition 
+			!= ''"> -->
+		<!-- ${pager.mysqlQueryCondition} -->
+		<!-- </if> -->
+	</select>
+
+	<!-- 查询系统用户列表 -->
+	<select id="selectAll" resultMap="BaseResultMap"
+		parameterType="Object">
+		select
+		<include refid="Base_Column_List" />
+		from customer.user
+		<include refid="Example_Where_Clause" />
+		<!-- <if test="pager.orderCondition != null and pager.orderCondition != 
+			''"> -->
+		<!-- ${pager.orderCondition} -->
+		<!-- </if> -->
+	</select>
+
+</mapper>   

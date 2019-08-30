@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.OrderMapper">
+
+    <resultMap id="BasefindsResultMap"
+        type="com.example.model.OrderModel">
+        <result column="id" property="id" />
+        <result column="user_code" property="user_code" />
+        <result column="cust_code" property="cust_code" />
+        <result column="prod_code" property="prod_code" />
+        <result column="count" property="count" />
+        <result column="TIME" property="TIME" />
+        <result column="status" property="status" />
+    </resultMap>
+    
+<!--     定义的sql片段 -->
+    <sql id="Base_Column_List">
+        id, user_code, cust_code, prod_code,count,TIME,status
+    </sql>
+<!--     查询条件 -->
+    <sql id="Example_Where_Clause">
+        where 1=1
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="user_code != null and user_code != ''">
+            and user_code like #{user_code}
+        </if>
+        <if test="cust_code != null and cust_code != ''">
+            and cust_code like #{cust_code}
+        </if>
+        <if test="prod_code != null and prod_code != ''">
+            and prod_code like #{prod_code}
+        </if>
+         
+    </sql>
+<!-- 查询商品数量 -->
+    <insert id="insert" parameterType="Object">
+        <selectKey resultType="java.lang.Integer" order="AFTER"
+            keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into customer.order_info(user_code, cust_code,
+        prod_code,count,TIME,status)
+        values(#{user_code}, #{cust_code}, #{prod_code},#{count},#{TIME},#{status})
+    </insert>
+    
+    <select id="select" resultMap="BasefindsResultMap"
+        parameterType="Object">
+        select
+        <include refid="Base_Column_List" />
+        from customer.order_info where user_code = #{user_code}
+    </select>
+    
+    
+<select id="selectCount" resultType="java.lang.Integer"
+        parameterType="Object">
+        select count(1) from customer.order_info
+        <include refid="Example_Where_Clause" />
+    </select>
+    <!-- 查询商品详情 -->
+    <select id="selectModel" resultMap="BasefindsResultMap"
+        parameterType="Object">
+        select
+        <include refid="Base_Column_List" />
+        from customer.order_info
+        <include refid="Example_Where_Clause" />
+        limit ${rowStart},${pageLimit}
+        <!-- <if test="pager.orderCondition != null and pager.orderCondition != 
+            ''"> -->
+        <!-- ${pager.orderCondition} -->
+        <!-- </if> -->
+        <!-- <if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition 
+            != ''"> -->
+        <!-- ${pager.mysqlQueryCondition} -->
+        <!-- </if> -->
+    </select>
+    </mapper>

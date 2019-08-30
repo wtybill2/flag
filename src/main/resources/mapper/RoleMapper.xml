@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.RoleMapper">
+
+    <!-- Result Map 映射关系 -->
+    <resultMap id="BaseResultMap"
+        type="com.example.model.RoleModel">
+        <id column="id" property="id" />
+        <result column="role_name" property="role_name" />
+        <result column="role_code" property="role_code" />
+        <result column="parent_code" property="parent_code" />
+
+    </resultMap>
+
+    <!-- table all fields sql片段 -->
+    <sql id="Base_Column_List">
+        id,role_name,role_code,parent_code
+    </sql>
+    <sql id="Example_Where_Clause">
+        where 1=1
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="role_name != null and role_name != ''">
+            and role_name like #{role_name}
+        </if>
+        <if test="role_code != null and role_code != ''">
+            and role_code = #{role_code}
+        </if>
+    </sql>
+    
+    <select id="selectCount" resultType="java.lang.Integer"
+        parameterType="Object">
+        select count(1) from customer.role
+        <include refid="Example_Where_Clause" />
+    </select>
+    
+    <select id="selectAll" resultMap="BaseResultMap"
+        parameterType="Object">
+        select
+        <include refid="Base_Column_List" />
+        from customer.role
+        <include refid="Example_Where_Clause" />
+        <!-- <if test="pager.orderCondition != null and pager.orderCondition != 
+            ''"> -->
+        <!-- ${pager.orderCondition} -->
+        <!-- </if> -->
+    </select>
+    </mapper>

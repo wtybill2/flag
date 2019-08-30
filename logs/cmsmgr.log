@@ -1,0 +1,363 @@
+2019-01-14 08:52:10 DallApplication.java INFO Strat...
+2019-01-14 08:52:10 DallApplication.java INFO Strat...
+2019-01-14 08:52:11 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 08:52:11 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 08:52:11 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 08:52:11 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 08:52:14 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 08:52:15 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 3998 ms
+2019-01-14 08:52:16 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:52:16 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 08:52:16 HikariDataSource.java INFO HikariPool-1 - Starting...
+2019-01-14 08:52:17 HikariDataSource.java INFO HikariPool-1 - Start completed.
+2019-01-14 08:52:17 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 08:52:17 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 08:52:17 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 08:52:17 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 08:52:17 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 08:52:17 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 08:52:17 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 08:52:17 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6dc72371
+2019-01-14 08:52:17 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 08:52:17 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 08:52:17 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 08:52:17 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 08:52:17 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 08:52:17 StartupInfoLogger.java INFO Started DallApplication in 7.045 seconds (JVM running for 8.101)
+2019-01-14 08:52:43 FrameworkServlet.java INFO Initializing Servlet 'dispatcherServlet'
+2019-01-14 08:52:43 FrameworkServlet.java INFO Completed initialization in 27 ms
+2019-01-14 08:52:52 UserController.java INFO logs/busi.log
+2019-01-14 08:58:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:58:03 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'taskScheduler'
+2019-01-14 08:58:03 SchedulerFactoryBean.java INFO Shutting down Quartz Scheduler
+2019-01-14 08:58:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-01-14 08:58:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:58:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-01-14 08:58:03 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:58:03 HikariDataSource.java INFO HikariPool-1 - Shutdown initiated...
+2019-01-14 08:58:03 HikariDataSource.java INFO HikariPool-1 - Shutdown completed.
+2019-01-14 08:58:03 DallApplication.java INFO Strat...
+2019-01-14 08:58:04 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 08:58:04 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 08:58:04 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 08:58:04 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 08:58:05 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 08:58:05 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 1462 ms
+2019-01-14 08:58:06 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:58:06 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 08:58:06 HikariDataSource.java INFO HikariPool-2 - Starting...
+2019-01-14 08:58:06 HikariDataSource.java INFO HikariPool-2 - Start completed.
+2019-01-14 08:58:06 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 08:58:06 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 08:58:06 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 08:58:06 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 08:58:06 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 08:58:06 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 08:58:06 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 08:58:06 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1ea8af28
+2019-01-14 08:58:06 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 08:58:07 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 08:58:07 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 08:58:07 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 08:58:07 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 08:58:07 StartupInfoLogger.java INFO Started DallApplication in 3.743 seconds (JVM running for 357.993)
+2019-01-14 08:58:07 ConditionEvaluationDeltaLoggingListener.java INFO Condition evaluation unchanged
+2019-01-14 08:58:11 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:58:11 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'taskScheduler'
+2019-01-14 08:58:11 SchedulerFactoryBean.java INFO Shutting down Quartz Scheduler
+2019-01-14 08:58:11 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-01-14 08:58:11 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:58:11 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-01-14 08:58:11 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:58:11 HikariDataSource.java INFO HikariPool-2 - Shutdown initiated...
+2019-01-14 08:58:11 HikariDataSource.java INFO HikariPool-2 - Shutdown completed.
+2019-01-14 08:58:12 DallApplication.java INFO Strat...
+2019-01-14 08:58:12 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 08:58:12 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 08:58:12 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 08:58:12 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 08:58:13 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 08:58:13 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 1422 ms
+2019-01-14 08:58:14 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:58:14 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 08:58:14 HikariDataSource.java INFO HikariPool-3 - Starting...
+2019-01-14 08:58:14 HikariDataSource.java INFO HikariPool-3 - Start completed.
+2019-01-14 08:58:14 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 08:58:14 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 08:58:14 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 08:58:14 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 08:58:14 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 08:58:14 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 08:58:14 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 08:58:14 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@375fcb14
+2019-01-14 08:58:14 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 08:58:14 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 08:58:14 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 08:58:14 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 08:58:14 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 08:58:14 StartupInfoLogger.java INFO Started DallApplication in 2.15 seconds (JVM running for 364.77)
+2019-01-14 08:58:14 ConditionEvaluationDeltaLoggingListener.java INFO Condition evaluation unchanged
+2019-01-14 08:58:26 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:58:26 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'taskScheduler'
+2019-01-14 08:58:26 SchedulerFactoryBean.java INFO Shutting down Quartz Scheduler
+2019-01-14 08:58:26 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-01-14 08:58:26 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:58:26 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-01-14 08:58:26 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:58:26 HikariDataSource.java INFO HikariPool-3 - Shutdown initiated...
+2019-01-14 08:58:26 HikariDataSource.java INFO HikariPool-3 - Shutdown completed.
+2019-01-14 08:58:27 DallApplication.java INFO Strat...
+2019-01-14 08:58:27 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 08:58:27 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 08:58:27 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 08:58:27 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 08:58:30 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 08:58:31 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 3295 ms
+2019-01-14 08:58:31 AbstractApplicationContext.java WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'IuserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes\com\example\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2019-01-14 08:58:31 ConditionEvaluationReportLoggingListener.java INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-14 08:58:31 LoggingFailureAnalysisReporter.java ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2019-01-14 08:58:34 DallApplication.java INFO Strat...
+2019-01-14 08:58:34 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 08:58:34 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 08:58:34 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 08:58:34 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 08:58:34 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 08:58:35 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 749 ms
+2019-01-14 08:58:35 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:58:35 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 08:58:35 HikariDataSource.java INFO HikariPool-4 - Starting...
+2019-01-14 08:58:35 HikariDataSource.java INFO HikariPool-4 - Start completed.
+2019-01-14 08:58:35 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 08:58:35 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 08:58:35 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 08:58:35 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 08:58:35 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 08:58:35 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 08:58:35 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 08:58:35 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@305cda11
+2019-01-14 08:58:35 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 08:58:35 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 08:58:35 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 08:58:35 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 08:58:35 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 08:58:35 StartupInfoLogger.java INFO Started DallApplication in 1.33 seconds (JVM running for 385.856)
+2019-01-14 08:58:35 ConditionEvaluationDeltaLoggingListener.java INFO Condition evaluation unchanged
+2019-01-14 08:58:45 FrameworkServlet.java INFO Initializing Servlet 'dispatcherServlet'
+2019-01-14 08:58:45 FrameworkServlet.java INFO Completed initialization in 6 ms
+2019-01-14 08:58:56 UserController.java INFO logs/busi.log
+2019-01-14 08:59:16 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:59:16 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'taskScheduler'
+2019-01-14 08:59:16 SchedulerFactoryBean.java INFO Shutting down Quartz Scheduler
+2019-01-14 08:59:16 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-01-14 08:59:16 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:59:16 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-01-14 08:59:16 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:59:16 HikariDataSource.java INFO HikariPool-4 - Shutdown initiated...
+2019-01-14 08:59:16 HikariDataSource.java INFO HikariPool-4 - Shutdown completed.
+2019-01-14 08:59:17 DallApplication.java INFO Strat...
+2019-01-14 08:59:17 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 08:59:17 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 08:59:17 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 08:59:17 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 08:59:17 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 08:59:18 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 745 ms
+2019-01-14 08:59:18 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:59:18 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 08:59:18 HikariDataSource.java INFO HikariPool-5 - Starting...
+2019-01-14 08:59:18 HikariDataSource.java INFO HikariPool-5 - Start completed.
+2019-01-14 08:59:18 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 08:59:18 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 08:59:18 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 08:59:18 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 08:59:18 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 08:59:18 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 08:59:18 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 08:59:18 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@21d52590
+2019-01-14 08:59:18 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 08:59:18 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 08:59:18 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 08:59:18 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 08:59:18 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 08:59:18 StartupInfoLogger.java INFO Started DallApplication in 1.379 seconds (JVM running for 428.944)
+2019-01-14 08:59:18 ConditionEvaluationDeltaLoggingListener.java INFO Condition evaluation unchanged
+2019-01-14 08:59:23 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:59:23 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'taskScheduler'
+2019-01-14 08:59:23 SchedulerFactoryBean.java INFO Shutting down Quartz Scheduler
+2019-01-14 08:59:23 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-01-14 08:59:23 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 08:59:23 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-01-14 08:59:23 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:59:23 HikariDataSource.java INFO HikariPool-5 - Shutdown initiated...
+2019-01-14 08:59:23 HikariDataSource.java INFO HikariPool-5 - Shutdown completed.
+2019-01-14 08:59:24 DallApplication.java INFO Strat...
+2019-01-14 08:59:24 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 08:59:24 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 08:59:24 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 08:59:24 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 08:59:24 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 08:59:25 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 731 ms
+2019-01-14 08:59:25 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 08:59:25 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 08:59:25 HikariDataSource.java INFO HikariPool-6 - Starting...
+2019-01-14 08:59:25 HikariDataSource.java INFO HikariPool-6 - Start completed.
+2019-01-14 08:59:25 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 08:59:25 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 08:59:25 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 08:59:25 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 08:59:25 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 08:59:25 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 08:59:25 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 08:59:25 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@78fc9eff
+2019-01-14 08:59:25 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 08:59:25 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 08:59:25 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 08:59:25 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 08:59:25 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 08:59:25 StartupInfoLogger.java INFO Started DallApplication in 1.263 seconds (JVM running for 435.874)
+2019-01-14 08:59:25 ConditionEvaluationDeltaLoggingListener.java INFO Condition evaluation unchanged
+2019-01-14 08:59:56 FrameworkServlet.java INFO Initializing Servlet 'dispatcherServlet'
+2019-01-14 08:59:56 FrameworkServlet.java INFO Completed initialization in 4 ms
+2019-01-14 09:03:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 09:03:03 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'taskScheduler'
+2019-01-14 09:03:03 SchedulerFactoryBean.java INFO Shutting down Quartz Scheduler
+2019-01-14 09:03:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-01-14 09:03:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 09:03:03 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-01-14 09:03:03 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-14 09:03:03 HikariDataSource.java INFO HikariPool-6 - Shutdown initiated...
+2019-01-14 09:03:03 HikariDataSource.java INFO HikariPool-6 - Shutdown completed.
+2019-01-14 09:03:03 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 09:03:03 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 09:03:03 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 09:03:03 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 09:03:04 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 09:03:04 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 684 ms
+2019-01-14 09:03:04 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 09:03:04 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 09:03:04 HikariDataSource.java INFO HikariPool-7 - Starting...
+2019-01-14 09:03:04 HikariDataSource.java INFO HikariPool-7 - Start completed.
+2019-01-14 09:03:04 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 09:03:04 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 09:03:04 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 09:03:04 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 09:03:04 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 09:03:04 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 09:03:04 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 09:03:04 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5b98e5f7
+2019-01-14 09:03:04 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 09:03:05 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 09:03:05 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 09:03:05 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 09:03:05 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 09:03:05 StartupInfoLogger.java INFO Started DallApplication in 1.744 seconds (JVM running for 655.775)
+2019-01-14 09:03:05 ConditionEvaluationDeltaLoggingListener.java INFO Condition evaluation unchanged
+2019-01-14 09:03:24 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 09:03:24 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'taskScheduler'
+2019-01-14 09:03:24 SchedulerFactoryBean.java INFO Shutting down Quartz Scheduler
+2019-01-14 09:03:24 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-01-14 09:03:24 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-01-14 09:03:24 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-01-14 09:03:24 ExecutorConfigurationSupport.java INFO Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-14 09:03:24 HikariDataSource.java INFO HikariPool-7 - Shutdown initiated...
+2019-01-14 09:03:24 HikariDataSource.java INFO HikariPool-7 - Shutdown completed.
+2019-01-14 09:03:25 DeferredLog.java INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 09:03:25 DeferredLog.java INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 09:03:25 StartupInfoLogger.java INFO Starting DallApplication on WIN-CD0P861PAGV with PID 1768 (C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.0.2.RELEASE\dall)
+2019-01-14 09:03:25 SpringApplication.java INFO No active profile set, falling back to default profiles: default
+2019-01-14 09:03:25 TomcatWebServer.java INFO Tomcat initialized with port(s): 8080 (http)
+2019-01-14 09:03:25 ServletWebServerApplicationContext.java INFO Root WebApplicationContext: initialization completed in 623 ms
+2019-01-14 09:03:25 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 09:03:25 WelcomePageHandlerMapping.java INFO Adding welcome page template: index
+2019-01-14 09:03:25 HikariDataSource.java INFO HikariPool-8 - Starting...
+2019-01-14 09:03:25 HikariDataSource.java INFO HikariPool-8 - Start completed.
+2019-01-14 09:03:25 StdSchedulerFactory.java INFO Using default implementation for ThreadExecutor
+2019-01-14 09:03:25 SchedulerSignalerImpl.java INFO Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-14 09:03:25 QuartzScheduler.java INFO Quartz Scheduler v.2.3.0 created.
+2019-01-14 09:03:25 RAMJobStore.java INFO RAMJobStore initialized.
+2019-01-14 09:03:25 QuartzScheduler.java INFO Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-14 09:03:25 StdSchedulerFactory.java INFO Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-01-14 09:03:25 StdSchedulerFactory.java INFO Quartz scheduler version: 2.3.0
+2019-01-14 09:03:25 QuartzScheduler.java INFO JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@51a8fbc
+2019-01-14 09:03:25 ExecutorConfigurationSupport.java INFO Initializing ExecutorService 'taskScheduler'
+2019-01-14 09:03:26 OptionalLiveReloadServer.java INFO LiveReload server is running on port 35729
+2019-01-14 09:03:26 SchedulerFactoryBean.java INFO Starting Quartz Scheduler now
+2019-01-14 09:03:26 QuartzScheduler.java INFO Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-01-14 09:03:26 TomcatWebServer.java INFO Tomcat started on port(s): 8080 (http) with context path '/dall'
+2019-01-14 09:03:26 StartupInfoLogger.java INFO Started DallApplication in 0.994 seconds (JVM running for 676.407)
+2019-01-14 09:03:26 ConditionEvaluationDeltaLoggingListener.java INFO Condition evaluation unchanged

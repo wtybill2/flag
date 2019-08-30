@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.ProdMapper">
+
+	<resultMap id="BasefindResultMap"
+		type="com.example.model.ProductModel">
+		<id column="id" property="id" />
+		<result column="code" property="code" />
+		<result column="name" property="name" />
+		<result column="sum" property="sum" />
+		<result column="cost" property="cost" />
+	</resultMap>
+
+	<!-- 定义的sql片段 -->
+	<sql id="Base_Column_List">
+		id, name, code, sum,cost
+	</sql>
+	<!-- 查询条件 -->
+	<sql id="Example_Where_Clause">
+		where 1=1
+		<if test="id != null">
+			and id = #{id}
+		</if>
+		<if test="code != null and code != ''">
+			and code like #{code}
+		</if>
+		<if test="name != null and name != ''">
+			and name like #{name}
+		</if>
+		<if test="sum != null and sum != ''">
+			and sum = #{sum}
+		</if>
+		<if test="cost != null and cost != ''">
+			and cost = #{cost}
+		</if>
+	</sql>
+	<!-- 查询商品数量 -->
+	<insert id="insert" parameterType="Object">
+		<selectKey resultType="java.lang.Integer" order="AFTER"
+			keyProperty="id">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+		insert into customer.product_info(code, name,
+		sum,cost)
+		values(#{code}, #{name}, #{sum},#{cost})
+	</insert>
+	<!-- 根据id删除数据 -->
+	<delete id="deletebyId" parameterType="Object">
+		delete from customer.product_info where id = #{id}
+	</delete>
+    <!-- 根据id更新数据 -->
+    <update id="updatebyId" parameterType="Object">
+        update customer.product_info set
+        code=#{code},name=#{name},sum=#{sum},cost=#{cost}
+        where id = #{id}
+    </update>
+    
+	<select id="select" resultMap="BasefindResultMap"
+		parameterType="Object">
+		select
+		<include refid="Base_Column_List" />
+		from customer.product_info 
+		<include refid="Example_Where_Clause" />
+	</select>
+
+
+	<select id="selectCount" resultType="java.lang.Integer"
+		parameterType="Object">
+		select count(1) from customer.product_info
+		<include refid="Example_Where_Clause" />
+	</select>
+
+	<select id="selectAll" resultMap="BasefindResultMap"
+		parameterType="Object">
+		select
+		<include refid="Base_Column_List" />
+		from customer.product_info
+		<include refid="Example_Where_Clause" />
+	</select>
+	<!-- 查询商品详情 -->
+	<select id="selectModel" resultMap="BasefindResultMap"
+		parameterType="Object">
+		select
+		<include refid="Base_Column_List" />
+		from customer.product_info
+		<include refid="Example_Where_Clause" />
+		limit ${rowStart},${pageLimit}
+		<!-- <if test="pager.orderCondition != null and pager.orderCondition != 
+			''"> -->
+		<!-- ${pager.orderCondition} -->
+		<!-- </if> -->
+		<!-- <if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition 
+			!= ''"> -->
+		<!-- ${pager.mysqlQueryCondition} -->
+		<!-- </if> -->
+	</select>
+</mapper>
